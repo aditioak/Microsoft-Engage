@@ -2,7 +2,7 @@ const socket = io('/')
 const videoGrid = document.getElementById('video-grid');
 const myVideo = document.createElement('video');
 myVideo.muted = true;
-const peers = {}
+
 var peer = new Peer(undefined)
 
 let myVideoStream
@@ -40,12 +40,7 @@ const connectToNewUser = (userId, stream)=>{
     call.on('stream', userVideoStream => {
     addVideoStream(video, userVideoStream)
     })
-    call.on('close', () => {
-      video.remove()
-    })
-  
-    peers[userId] = call
-  }
+}
 
 const addVideoStream = (video,stream)=>{
     video.srcObject=stream;
@@ -130,7 +125,6 @@ $('html').keydown((e) => {
     `
     document.querySelector('.main__video_button').innerHTML = html;
   }
-
 
     const shareScreen = async () => {
       const socket = io('/')
