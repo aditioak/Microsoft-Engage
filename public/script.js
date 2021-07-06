@@ -2,7 +2,7 @@ const socket = io('/')
 const videoGrid = document.getElementById('video-grid');
 const myVideo = document.createElement('video');
 myVideo.muted = true;
- 
+const peers = {}
 var peer = new Peer(undefined)
 
 let myVideoStream
@@ -40,7 +40,12 @@ const connectToNewUser = (userId, stream)=>{
     call.on('stream', userVideoStream => {
     addVideoStream(video, userVideoStream)
     })
-}
+    call.on('close', () => {
+      video.remove()
+    })
+  
+    peers[userId] = call
+  }
 
 const addVideoStream = (video,stream)=>{
     video.srcObject=stream;
@@ -124,4 +129,34 @@ $('html').keydown((e) => {
       <span>Play Video</span>
     `
     document.querySelector('.main__video_button').innerHTML = html;
+  }
+
+
+    const shareScreen = async () => {
+      const socket = io('/')
+      const videoGrid = document.getElementById('video-grid')
+      const myPeer = new Peer()
+    const myVideo2 = document.createElement('video')
+    myVideo2.muted = true;
+    const peers = {}
+    navigator.mediaDevices.getDisplayMedia({
+      video: true,
+      audio: true
+    }).then(stream => {
+      myVideoStream = stream;
+      addVideoStream(myVideo2, stream)
+      myPeer.on('call', call => {
+        call.answer(stream)
+        const video2 = document.createElement('video')
+        call.on('stream', userVideoStream => {
+          addVideoStream(video2, userVideoStream)
+        })
+      })
+    
+      socket.on('user-connected', userId => {
+        connectToNewUser(userId, stream)
+      })
+      
+    
+    })
   }
