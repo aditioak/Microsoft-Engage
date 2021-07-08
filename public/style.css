@@ -64,6 +64,7 @@
 .main__right {
     display: flex;
     flex-direction: column;
+    background-color: #242324;
 }
 
 .main__header {
@@ -75,6 +76,7 @@
 .main__chat_window {
     flex-grow: 1;
     overflow-y: auto;
+    width: 100%;
 }
 
 .messages{
@@ -85,6 +87,7 @@
 .main__message_container {
     padding: 22px 12px;
     display: flex;
+    width: 100%;
 }
 
 .main__message_container input {
