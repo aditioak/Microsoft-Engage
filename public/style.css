@@ -64,6 +64,7 @@
 .main__right {
     display: flex;
     flex-direction: column;
+    position: fixed;
 }
 
 .main__header {
@@ -75,7 +76,6 @@
 .main__chat_window {
     flex-grow: 1;
     overflow-y: auto;
-    position: fixed;
 }
 
 .messages{
