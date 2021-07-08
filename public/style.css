@@ -64,6 +64,7 @@
 .main__right {
     display: flex;
     flex-direction: column;
+    bottom: 0;
 }
 
 .main__header {
