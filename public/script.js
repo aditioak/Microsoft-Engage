@@ -28,11 +28,9 @@ navigator.mediaDevices.getUserMedia({
     })
 
 })
-
 peer.on('open',id => {
     socket.emit('join-room',ROOM_ID,id);
 })
-
 
 const connectToNewUser = (userId, stream)=>{
     const call = peer.call(userId, stream)
@@ -125,3 +123,61 @@ $('html').keydown((e) => {
     `
     document.querySelector('.main__video_button').innerHTML = html;
   }
+
+  const shareScreen = async () => {
+    const socket = io('/')
+    const videoGrid = document.getElementById('video-grid')
+    const myPeer = new Peer()
+    const myVideo2 = document.createElement('video')
+    myVideo2.muted = true;
+    const peers = {}
+    
+    navigator.mediaDevices.getDisplayMedia({
+    video: true,
+    audio: true
+  }).then(stream => {
+    myVideoStream = stream;
+    addVideoStream(myVideo2, stream)
+    myPeer.on('call', call => {
+      call.answer(stream)
+      const video2 = document.createElement('video')
+      call.on('stream', userVideoStream => {
+        addVideoStream(video2, userVideoStream)
+      })
+    })
+  
+    socket.on('user-connected', userId => {
+      connectToNewUser(userId, stream)
+    }) 
+  })  
+
+  socket.on('user-disconnected', userId => {
+    if (peers[userId]) peers[userId].close()
+  })  
+
+  myPeer.on('open', id => {
+    socket.emit('join-room', ROOM_ID, id)
+  })  
+
+  function connectToNewUser(userId, stream) {    
+    const call = myPeer.call(userId, stream)
+    const video2 = document.createElement('video')
+    call.on('stream', userVideoStream => {
+      addVideoStream(video2, userVideoStream)      
+    })
+    call.on('close', () => {
+      video2.remove()
+    })
+  
+    peers[userId] = call
+  }
+  
+  function addVideoStream(video2, stream) {
+    video2.srcObject = stream
+    video2.addEventListener('loadedmetadata', () => {
+      video2.play()
+    })
+    videoGrid.append(video2)
+  }
+  
+}
