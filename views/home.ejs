@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <link href="home.css" rel="stylesheet" />
-    <!-- <link
-      href="https://bootswatch.com/4/slate/bootstrap.min.css"
-      rel="stylesheet"
-    /> -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -39,7 +35,8 @@
         <h3>Video Chat</h3>
       </div>
 
-      <div class="join__meeing">
+      <!-- This is the join meeting button -->
+      <div class="join__meeting">
         <div class="meeting-form">
           <label>Paste the meeting id here :</label>
           <input
@@ -52,12 +49,13 @@
           <button
             class="btn btn-danger mt-2"
             type="button"
-            onclick="joinMeeting()"
+            onclick="joinMeetingfunction()"
           >
             Join
           </button>
         </a>
       </div>
+      <!-- This is for the create meeting button -->
       <div class="create__meeting mx-auto">
         <a href="/call" id="meeting-href">
           <button class="btn btn-success">
@@ -68,8 +66,9 @@
       </div>
     </div>
 
+    <!-- This is the join meeting function that is triggered when the join meeting button is pressed -->
     <script>
-      const joinMeeting = () => {
+      const joinMeetingfunction = () => {
         var meetingId = $("#meeting-number").val();
         console.log(meetingId);
         url = `https://dazzling-yellowstone-81428.herokuapp.com/${meetingId}`;
