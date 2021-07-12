@@ -151,15 +151,11 @@ $('html').keydown((e) => {
     }) 
   })  
 
-  socket.on('user-disconnected', userId => {
-    if (peers[userId]) peers[userId].close()
-  })  
-
   myPeer.on('open', id => {
     socket.emit('join-room', ROOM_ID, id)
   })  
 
-  function connectToNewUser(userId, stream) {    
+  /*function connectToNewUser(userId, stream) {    
     const call = myPeer.call(userId, stream)
     const video2 = document.createElement('video')
     call.on('stream', userVideoStream => {
@@ -172,12 +168,12 @@ $('html').keydown((e) => {
     peers[userId] = call
   }
   
-  function addVideoStream(video2, stream) {
+ function addVideoStream(video2, stream) {
     video2.srcObject = stream
     video2.addEventListener('loadedmetadata', () => {
       video2.play()
     })
     videoGrid.append(video2)
-  }
+  }*/
   
 }
