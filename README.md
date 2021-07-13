@@ -20,7 +20,6 @@
     <li><a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-			<li><a href="#dependencies">Dependencies</a></li>
 		<li><a href="#installation">Installation</a></li></ul>
     <li><a href="#features">Features</a></li>
 	<li><a href="#possible-improvements">Possible Improvements</a></li>
@@ -66,21 +65,13 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 - [Basic setup of NodeJs](https://nodejs.org/en/docs/guides/getting-started-guide/)
 
 
-<!-- DEPENDENCIES -->
-### Dependencies
-* [socket.io](https://www.npmjs.com/package/socket.io)
-* [express](https://www.npmjs.com/package/express)
-* [peer](https://www.npmjs.com/package/peer)
-* [peerjs](https://www.npmjs.com/package/peerjs)
-* [uuid](https://www.npmjs.com/package/uuid)
-* [cors](https://www.npmjs.com/package/cors)
 
 ### Installation
 
 1. Clone the repo
 `$ git clone https://github.com/aditioak/Microsoft-Engage`
 
-2. Install aforementioned dependencies
+2. Install aforementioned dependencies using npm install package name (Ex: npm install express). npm install has to be executed from the root directory where package.json resides
 
 3. To run the server locally, use command *node server.js* in the terminal. The server will listen on PORT 3030 (localhost:3030)
 <br/>
