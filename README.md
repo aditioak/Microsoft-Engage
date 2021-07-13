@@ -45,7 +45,7 @@ The challenge was to **build a Microsoft Teams Clone** . It should be a fully fu
 
 
 
-## **Architecture :**
+## **Architecture**
 Peer to Peer mesh architecture is used which provides group video call functionality. WebRTC is used for real time media communication between devices. 
 
 WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, video, and data, with one central caveat.  A form of discovery and media format negotiation must take place, as discussed elsewhere, in order for two devices on different networks to locate one another. This process is called signaling and involves both devices connecting to a third, mutually agreed-upon server. Through this third server, the two devices can locate one another, and exchange negotiation messages.
