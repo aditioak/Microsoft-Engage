@@ -4,7 +4,7 @@
 
  This is a video chatting web application that uses WebRTC for Video Conferencing
 
-<p align ="center"> <!-- Youtube Video Link --><a href=" https://youtu.be/AO4qCTHlDIs ">View Demo</a></p>
+<p align ="center"> <!-- Youtube Video Link --><a href="https://www.youtube.com/watch?v=AO4qCTHlDIs">View Demo</a></p>
 <p align="center"><a href="https://dazzling-yellowstone-81428.herokuapp.com/">Website</a>
    </p>
 
