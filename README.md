@@ -24,7 +24,7 @@
 			<li><a href="#dependencies">Dependencies</a></li>
 		<li><a href="#installation">Installation</a></li></ul>
     <li><a href="#features">Features</a></li>
-	<li><a href="#possible improvements">Possible Improvements</a></li>
+	<li><a href="#possible-improvements">Possible Improvements</a></li>
 	 <li><a href="#tested-platforms">Tested Platforms</a></li>
 	 <li><a href="#known-issues">Known issues</a></li>
     <li><a href="#contact">Contact</a></li>
