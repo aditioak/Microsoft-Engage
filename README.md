@@ -94,7 +94,7 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 - Multiple meeting rooms can be created simultaneously
 - Unique ID for every meeting room
 - Leave meeting which lets you drop the call
-
+<br/>
 
 ## **Possible Improvements**
 - Screen Share can be viewed on full screen
@@ -103,16 +103,18 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 - Add security and end to end encryption
 - Attendance log of meeting (time attended by each participant)
 - Add transcript of meeting and chats
-
+<br/>
+	
 ## **Tested Platforms**
 - Chrome
 - Edge
-
+<br/>
 
 ## Known Issues
 - Video is not removed from the video grid after a user leaves a meeting or screenshare is stopped (A tile is still seen)
 	- Quick fix: Refresh the browser
-
+<br/>
+	
 <!-- CONTACT -->
 ## Contact
 - Email : aditioak02@gmail.com
