@@ -85,7 +85,7 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 3. To run the server locally, use command *node server.js* in the terminal. The server will listen on PORT 3030 (localhost:3030)
 <br/>
 
-### **Features**
+## **Features**
 - Connectivity for multiple users (More than 2)
 - Mute and unmute audio
 - Play/ Stop video
@@ -96,7 +96,7 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 - Leave meeting which lets you drop the call
 
 
-### **Possible Improvements**
+## **Possible Improvements**
 - Screen Share can be viewed on full screen
 - Share link / meeting code feature can be added
 - Record meeting
@@ -104,12 +104,12 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 - Attendance log of meeting (time attended by each participant)
 - Add transcript of meeting and chats
 
-### **Tested Platforms**
+## **Tested Platforms**
 - Chrome
 - Edge
 
 
-### Known Issues
+## Known Issues
 - Video is not removed from the video grid after a user leaves a meeting or screenshare is stopped (A tile is still seen)
 	- Quick fix: Refresh the browser
 
