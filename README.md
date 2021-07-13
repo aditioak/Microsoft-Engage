@@ -1,3 +1,9 @@
+#Microsoft Engage 2021 Challenge
+
+## A Clone of Microsoft Teams
+
+ This is a video chatting web application that uses WebRTC for Video Conferencing
+ 
 <!-- PROJECT LOGO -->
 <p align="center"> <p align ="center"> <!-- Youtube Video Link -->
    <a href=" ">View Demo</a>
@@ -19,7 +25,7 @@
       <ul>
         <li><a href="#pre-requisites">Pre-requisites</a></li></ul>
     <li><a href="#features">Features</a></li>
-	 <li><a href="#possible improvements">Possible Improvements</a></li>
+	 <li><a href="#possible-improvements">Possible Improvements</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -39,7 +45,6 @@ The challenge was to **build a Microsoft Teams Clone** . It should be a fully fu
 * [Peerjs](https://www.npmjs.com/package/peerjs)
 * [uuid](https://www.npmjs.com/package/uuid)
 * [cors](https://www.npmjs.com/package/cors)
-
 
 
 
@@ -71,7 +76,6 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 2. To run the server locally, use command *node server.js* in the terminal. The server will listen on PORT 3030 (localhost:3030).
 
 
-
 <!-- DEPENDENCIES -->
 ## Dependencies
 * [socket.io](https://www.npmjs.com/package/socket.io)
@@ -81,7 +85,6 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 * [uuid](https://www.npmjs.com/package/uuid)
 * [cors](https://www.npmjs.com/package/cors)
 
-<br/>
 
 <!-- ROADMAP -->
 ### Features
