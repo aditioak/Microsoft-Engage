@@ -40,10 +40,10 @@ Timeline of my sub sprints and implementation of Agile: https://drive.google.com
 ### **Built With**
 * [WebRTC](https://webrtc.org/)
 * [Nodejs](https://nodejs.org/en/)
-* [Socket.io](https://www.npmjs.com/package/socket.io)
-* [Express](https://www.npmjs.com/package/express)
-* [Peer](https://www.npmjs.com/package/peer)
-* [Peerjs](https://www.npmjs.com/package/peerjs)
+* [socket.io](https://www.npmjs.com/package/socket.io)
+* [express](https://www.npmjs.com/package/express)
+* [peer](https://www.npmjs.com/package/peer)
+* [peerjs](https://www.npmjs.com/package/peerjs)
 * [uuid](https://www.npmjs.com/package/uuid)
 * [cors](https://www.npmjs.com/package/cors)
 
