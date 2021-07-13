@@ -4,7 +4,6 @@
 
  This is a video chatting web application that uses WebRTC for Video Conferencing
 
-<!-- PROJECT LOGO -->
 <p align ="center"> <!-- Youtube Video Link --><a href=" ">View Demo</a></p>
 <p align="center"><a href="https://dazzling-yellowstone-81428.herokuapp.com/">Website</a>
    </p>
@@ -86,7 +85,7 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 3. To run the server locally, use command *node server.js* in the terminal. The server will listen on PORT 3030 (localhost:3030)
 <br/>
 
-### Features
+### **Features**
 - Connectivity for multiple users (More than 2)
 - Mute and unmute audio
 - Play/ Stop video
@@ -105,7 +104,7 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 - Attendance log of meeting (time attended by each participant)
 - Add transcript of meeting and chats
 
-### Tested Platforms
+### **Tested Platforms**
 - Chrome
 - Edge
 
