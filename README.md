@@ -32,6 +32,11 @@
 The challenge was to **build a Microsoft Teams Clone** . It should be a fully functional prototype with at least one mandatory functionality - **a minimum of two participants should be able connect with each other and have a video conversation**
 [Microsoft Engage 2021](https://microsoft.acehacker.com/engage2021/?mc_cid=51cf8705a5&mc_eid=e7a7568555#challenge)
 
+I have implemented Agile's Scrum Methodology to build this project.
+Scrum is a project management method that is used to improve the project in every iteration. Each iteration has sprints, where the goal in each sprint is to build the most important feature first and then improve the project as a potentially deliverable product. There were 3 main sprints as a part of this project: Design, Build and Adapt. After researching I have further made my own sprints of length 1-2 days each under the 3 main sprints
+
+Timeline of my sub sprints and implementation of Agile: https://drive.google.com/file/d/1R4mWQ1XZ7XF2l8YB4ihNMa0ZDen0YPP_/view?usp=sharing
+
 ### **Built With**
 * [WebRTC](https://webrtc.org/)
 * [Nodejs](https://nodejs.org/en/)
