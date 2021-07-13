@@ -1,4 +1,4 @@
-#Microsoft Engage 2021 Challenge
+# Microsoft Engage 2021 Challenge
 
 ## A Clone of Microsoft Teams
 
@@ -97,7 +97,7 @@ WebRTC is a fully peer-to-peer technology for the real-time exchange of audio, v
 - Leave meeting which lets you drop the call
 
 
-### Possible Improvements
+### **Possible Improvements**
 - Screen Share can be viewed on full screen
 - Share link / meeting code feature can be added
 - Record meeting
